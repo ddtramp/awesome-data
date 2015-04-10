@@ -1,0 +1,15 @@
+{
+  "name": "awesome-data",
+  "version": "1.0.0",
+  "private": true,
+  "author": "jack<wangxichao001@gmail.com>",
+  "description": "for test, provide data",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.5",
+    "faker": "^2.1.2",
+    "jade": "*"
+  }
+}

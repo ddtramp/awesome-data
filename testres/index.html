@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chatset='utf-8'/>
+	<title>test</title>
+
+</head>
+<body>
+	<div class="container">
+		
+	</div>
+	<script type="text/javascript" src="zepto/1.1.6/zepto.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$.ajax({
+				url: 'http://localhost:3001/users/12',
+				type: 'post',
+				data: {},
+				dataType: 'json',
+				success: function (data) {
+					debugger
+				},
+				error: function () {
+					// todo 
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>
