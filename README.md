@@ -8,6 +8,13 @@ see http://ddtramp.github.io/awesome-data
 
     run npm install
 
+    run node app.js
+
+    or if you use nodemon watch file change, you can run:
+
+      nodemon app.js    // it will be watch all file's change, see nodemon doc
+
+
 
 生成 json data， 支持跨域请求， `post` & `get`, 返回 json
 
