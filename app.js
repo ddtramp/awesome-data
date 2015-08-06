@@ -41,11 +41,10 @@ app.all('*', function(req, res, next) {
     next();
 });
 
+app.get('/users/:count', user.list);
+app.post('/users/:count', user.list);
 
-app.get('/users/count', user.list);
-app.post('/users/count', user.list);
-
-app.get('/', routes.index);
+app.get('/', routes.index)
 
 app.get('*', function (req, res) {
 	res.send(500, {message: 'Oops, you request uri is not avaliable, please see api...'});

@@ -3,6 +3,7 @@
  * GET users listing.
  */
 
+
  var faker = require('faker');
 faker.locale = 'zh_CN'; // set language
 
@@ -10,7 +11,8 @@ faker.locale = 'zh_CN'; // set language
 exports.list = function (req, res, next) {
   var body = [],
       i = 0;
-  var count = (req.method === 'GET') ? req.query.count : req.body.count; 
+  var count = req.params.count;
+
   for ( ; i < count; i++ ) {
     body.push({
       'name': faker.name.findName(),
@@ -20,5 +22,6 @@ exports.list = function (req, res, next) {
       'longitude': faker.address.longitude()
     });
   }
+
   res.json(200, body);
-}
+};
