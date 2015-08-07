@@ -5,10 +5,13 @@
 
 
  var faker = require('faker');
+
 faker.locale = 'zh_CN'; // set language
 
 
 exports.list = function (req, res, next) {
+  'use strict';
+
   var body = [],
       i = 0;
   var count = req.params.count;
